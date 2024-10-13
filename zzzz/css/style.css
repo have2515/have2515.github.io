@@ -13,8 +13,15 @@ html {
 body {
   font-family: 'ProximaNova_reg', sans-serif;
 }
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
 .header {
   position: fixed;
+  z-index: 9;
   width: 100%;
   background-color: black;
   height: 4rem;
@@ -43,6 +50,7 @@ body {
 }
 .button {
   border-radius: 0.5rem;
+  border: none;
   font-size: 1.3rem;
   color: white;
   background-color: black;
@@ -125,15 +133,15 @@ body {
 }
 .main-info-photo img {
   display: block;
-  height: 22rem;
-  width: 30rem;
+  height: 19.5rem;
   margin-bottom: 4rem;
 }
 .main-info-photo form {
   display: inline-block;
 }
 .main-info-photo button {
-  width: 15rem;
+  width: 21rem;
+  margin: auto 2rem;
 }
 .main-coninfo {
   background-color: white;
@@ -239,4 +247,126 @@ body {
 .footer-creator button {
   width: 13rem;
   font-size: 1.5rem;
+}
+/* Всплывающее окно регистрации*/
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-content {
+  text-align: center;
+  position: fixed;
+  background-color: white;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.popup-header {
+  font-size: 3rem;
+  padding: 5rem	8rem 3rem 8rem;
+}
+.popup-close {
+  position: absolute;
+  font-size: 3rem;
+  top: -2rem;
+  right: -3rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.popup-form {
+  margin: auto 1.5rem;
+}
+.popup-form input {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+.popup-form p {
+  font-size: 1.2rem;
+  color: gray;
+}
+.popup-form a {
+  text-decoration: bold;
+  text-decoration: none;
+  color: black;
+}
+.popup-btn {
+  width: 100%;
+  font-size: 1.8rem;
+  margin: 3rem auto 13rem auto;
+  padding: 1.2rem;
+  border-radius: 3rem;
+  border: none;
+  background-image: linear-gradient(to right, #27ccfd, #b326ff);
+  color: white;
+}
+.popupreg {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popupreg-content {
+  text-align: center;
+  position: fixed;
+  background-color: white;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.popupreg-header {
+  font-size: 3rem;
+  padding: 5rem	8rem 3rem 8rem;
+}
+.popupreg-close {
+  position: absolute;
+  font-size: 3rem;
+  top: -2rem;
+  right: -3rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.popupreg-form {
+  margin: auto 1.5rem;
+}
+.popupreg-form input {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+.popupreg-btn {
+  width: 100%;
+  font-size: 1.8rem;
+  margin: 3rem auto 5rem auto;
+  padding: 1.2rem;
+  border-radius: 3rem;
+  border: none;
+  background-image: linear-gradient(to right, #27ccfd, #b326ff);
+  color: white;
 }
