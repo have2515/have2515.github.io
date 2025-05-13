@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'ProximaNova_bold';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Bold.woff2') format('woff2'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype'), url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ProximaNova_reg';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Colors */
+.header-top {
+  background-color: #000000;
+  height: 0.5rem;
+}
+.header {
+  background: url("../img/header/bg.png") no-repeat;
+}
+.header .container {
+  padding: 0rem;
+}
+.header-logo {
+  text-align: left;
+}
+.header-logo button {
+  background-color: transparent;
+  border: none;
+}
+.header-logo button h1 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  color: white;
+  font-size: 3.2rem;
+}
+.header-input input {
+  width: 100%;
+  height: 100%;
+  margin-top: 0.4rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+.header-input img {
+  width: 2rem;
+  height: 2rem;
+}
+.header-button {
+  margin-top: 1.2rem;
+  text-align: right;
+}
+.header-button button {
+  border: none;
+  background-color: transparent;
+}
+.header-button img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.nav {
+  text-align: center;
+  background-color: #000;
+  vertical-align: middle;
+}
+.nav .sec {
+  display: inline-block;
+}
+.nav a {
+  font-family: 'ProximaNova_bold', sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 1.2rem ;
+}

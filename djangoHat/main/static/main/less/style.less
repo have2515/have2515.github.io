@@ -1,0 +1,240 @@
+@font-face {
+ font-family: 'ProximaNova_bold';
+ src: url('../fonts/ProximaNova-Bold.eot');
+ src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+     url('../fonts/ProximaNova-Bold.woff') format('woff'),
+     url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+     url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+ font-weight: bold;
+ font-style: normal;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: 'ProximaNova_reg';
+ src: url('../fonts/ProximaNova-Regular.eot');
+ src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+     url('../fonts/ProximaNova-Regular.woff') format('woff'),
+     url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+     url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+ font-weight: normal;
+ font-style: normal;
+ font-display: swap;
+}
+
+.reg() {
+	font-family: 'ProximaNova_reg', sans-serif;
+}
+
+.bold() {
+	font-family: 'ProximaNova_bold', sans-serif;
+}
+
+
+
+
+/* Colors */
+@btn-color: #364679;
+@lgray: #aaa;
+@light: #fff;
+@black: #000;
+
+
+			
+
+
+.header-top {
+	background-color: @black;
+	height: 0.5rem;
+}
+
+.header {
+	background: url("../img/header/bg.png") no-repeat;
+	.container {
+		padding: 0rem;
+	}
+	&-logo {
+		text-align: left;
+		button {
+			background-color: transparent;
+			border: none;
+			h1{
+				.bold();
+				color: white;
+				font-size: 3.2rem;
+			}
+		}
+	}
+
+	&-input {
+		input {
+			width: 100%;
+			height: 100%;
+			margin-top: 0.4rem;
+			padding: 1rem;
+			border-radius: 0.8rem;
+		}
+		img {
+			width: 2rem;
+			height: 2rem;
+		}
+	}
+
+	&-button {
+		margin-top: 1.2rem;
+		text-align: right;
+		button {
+			border: none;
+			background-color: transparent;
+		}
+		img {
+			width: 1.8rem;
+			height: 1.8rem;
+		}
+	}
+}
+
+
+
+
+.nav {
+	text-align: center;
+	.sec {
+		display: inline-block;
+	}
+	background-color: #000;
+	vertical-align: middle;
+	a {
+		.bold();
+		color: white;
+		text-decoration: none;
+		padding: 1.2rem ;
+
+	}
+}
+
+
+/*38 19*/
+.section-slider {
+	background: url("../img/muzik1.png") no-repeat;
+	width: 100%;
+	height: 100%;
+	height: 46rem;
+	margin-bottom: 5rem;
+
+	&-text {
+		margin-top: 13rem;
+		font-size: 1.5rem;
+		h7 {
+			.bold();
+			color: white;
+		}
+	}
+
+	&-btn {
+		button {
+			.bold;
+			font-size: 1.3rem;
+			width: 100%;
+			height: 100%;
+			padding: 0.7rem;
+			border: none;
+			margin-top: 0.5rem;
+			color: white;
+			background-color: @btn-color;
+		}
+		button:hover {
+			background-color: #333b55;
+		}
+	}
+
+}
+
+
+
+.pop {
+
+	&-title {
+		.bold();
+		text-align: center;
+		font-size: 2rem;
+		color: @btn-color;
+	}
+	&-desk {
+		.bold();
+		text-align: center;
+		font-size: 1rem;
+		color: @lgray;
+		margin-bottom: 2rem;
+	}
+}
+
+
+.card {
+	border: none;
+	a {
+		.bold();
+		color: @btn-color;
+		text-decoration: none;
+	}
+	h3 {
+		.bold();
+		color: @btn-color;
+	}
+
+	&-body {
+		transform: translate(-2%, -10%);
+	}
+
+	&-image {	
+		text-align: center;
+		.card-interact {
+			display: none;
+			position: absolute;
+			top: 60%;
+			left: 7%;
+
+			button {
+				margin-right: 0.6rem;
+				background-color: @btn-color;
+				color: @light;
+				border: none;
+				padding: 0.4rem 0.9rem 0.5rem 0.9rem;
+			}
+			button:hover {
+				background-color: #333b55;
+			}
+			img {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+
+			&-bucket, &-view, &-fav{
+				display: inline-block;
+			}
+		}
+		img {
+			width: 18rem;
+			height: 20rem;
+		}
+		&-gray {
+			background-color: #aaa;
+		}
+	}
+
+	&-image:hover {
+		.card-interact {
+			display: inline-block;
+		}
+	}
+}
+
+.footer {
+	margin-top: 2rem;
+	border-top: 1px solid @lgray;
+	p {
+		color: @lgray;
+	}
+}

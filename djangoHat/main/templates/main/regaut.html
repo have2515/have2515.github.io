@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'main/css/regaut.css' %}">
+	<link rel="stylesheet" href="{% static 'main/css/normalize.css' %}">
+	<title>Авторизация</title>
+</head>
+<body>
+
+
+	<div class="popup">
+		<div class="popup-content">
+
+			<form method="POST">
+				{% csrf_token %}
+				<div class="popup-content-form form">	
+					<div class="image">
+						<img src="{% static 'main/img/header/profile.png' %}" alt="(">
+					</div>
+
+					<div class="input">
+						<input type="text" id="login" name="login" placeholder="Логин">
+					</div>
+				</div>
+
+				<div class="popup-content-form form">
+					<div class="image">
+						<img src="{% static 'main/img/header/zamok.png' %}" alt="(">
+					</div>
+
+					<div class="input">
+						<input type="password" id="password" name="password" placeholder="Пароль">
+					</div>
+				</div>
+
+				<div class="popup-content-btn">
+					<button class="btn">ВОЙТИ</button>
+				</div>
+			</form>
+
+			<p><strong>Нет аккаунта?</strong> <strong><a href="{% url 'main:register' %}">Регистрация</a></strong></p>
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
