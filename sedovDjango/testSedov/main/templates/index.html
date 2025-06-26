@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.header {
+			text-align: center;
+		}
+
+		.nav {
+			text-align: center;
+		}
+		.nav a {
+			margin: 2rem 1rem;
+		}
+
+		.body {
+
+		}
+
+		.prod {
+			width: 10%;
+			display: inline-block;
+		}
+
+		.prod img {
+			width: 10rem;
+			height: 18rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="header" style="border: 1px solid black;">
+		<h1>Крутой сайт</h1>
+	</div>
+
+	<div class="nav" style="border: 1px solid black;">
+		<a href="{% url 'home' %}">Главная</a>
+		{% if user.is_authenticated %}
+			<a href="{% url 'logout' %}">Выйти</a>
+		{% else %}
+			<a href="{% url 'reg' %}">Регистрация</a>
+			<a href="{% url 'log' %}">Авторизация</a>
+		{% endif %}
+	</div>
+
+	<div class="body" style="border: 1px solid black;">
+		<h1>Продукты</h1>
+		{% for el in products %}
+		<div class="prod">
+				<img src="{{ el.image }}" alt="123">
+				<p>{{ el.name }}</p>
+		</div>
+		{% endfor %}
+
+	</div>
+
+	<div class="footer" style="border: 1px solid black;">
+		<p>2025</p>
+	</div>
+</body>
+</html>
